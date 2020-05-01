@@ -1,4 +1,4 @@
 ﻿# Studia
-Michał Henicz <br/>
-Informatyka, I stopnia <br/>
+Michał Henicz <br>
+Informatyka, I stopnia <br>
 niestacjonarne
