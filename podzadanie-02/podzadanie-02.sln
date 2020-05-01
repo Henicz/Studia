@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "podzadanie-02", "podzadanie-02.csproj", "{9433F0C3-7EC0-48A1-BAAF-C3328FB1F18C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WSB_C_2020_Z1_01", "WSB_C_2020_Z1_01", "{2FEC55F2-FC05-4234-863B-7F7F9ECD51E7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,6 +20,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9433F0C3-7EC0-48A1-BAAF-C3328FB1F18C} = {2FEC55F2-FC05-4234-863B-7F7F9ECD51E7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FB6B50C5-DA79-4593-A4AC-37657186070C}
