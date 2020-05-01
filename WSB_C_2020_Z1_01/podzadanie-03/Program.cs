@@ -9,31 +9,37 @@ namespace podzadanie_03
             Console.WriteLine("Wybierz działanie:");
             Console.WriteLine("1 - dodawanie");
             Console.WriteLine("2 - odejmowanie");
-            int choose = Convert.ToInt32(Console.ReadLine());
-            int first_number, second_number, score;
+            Console.WriteLine("3 - mnożenie");
+            int variant = Convert.ToInt32(Console.ReadLine());
+            int first_number, second_number;
 
-            if (choose == 1)
+            switch (variant)
             {
-                Console.WriteLine("Podaj pierwszą liczbę: ");
-                first_number = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("Podaj drugą liczbę: ");
-                second_number = Convert.ToInt32(Console.ReadLine());
-                score = first_number + second_number;
-                Console.WriteLine("Wynik " + first_number + " + " + second_number + " = " + score);
-            }
-            else if (choose == 2)
-            {
-                Console.WriteLine("Podaj pierwszą liczbę: ");
-                first_number = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("Podaj drugą liczbę: ");
-                second_number = Convert.ToInt32(Console.ReadLine());
-                score = first_number - second_number;
-                Console.WriteLine("Wynik " + first_number + " - " + second_number + " = " + score);
-            }
-            else
-            {
-                Console.WriteLine("Nieobsługiwane");
-            }         
+                case 1:
+                    Console.Write("Podaj pierwszą liczbę: ");
+                    first_number = Convert.ToInt32(Console.ReadLine());
+                    Console.Write("Podaj drugą liczbę: ");
+                    second_number = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine(first_number + " + " + second_number + " = " + (first_number+second_number));
+                    break;
+                case 2:
+                    Console.Write("Podaj pierwszą liczbę: ");
+                    first_number = Convert.ToInt32(Console.ReadLine());
+                    Console.Write("Podaj drugą liczbę: ");
+                    second_number = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine(first_number + " - " + second_number + " = " + (first_number-second_number));
+                    break;
+                case 3:
+                    Console.Write("Podaj pierwszą liczbę: ");
+                    first_number = Convert.ToInt32(Console.ReadLine());
+                    Console.Write("Podaj drugą liczbę: ");
+                    second_number = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine(first_number + " * " + second_number + " = " + (first_number*second_number));
+                    break;
+                default:
+                    Console.WriteLine("Brak wybranej opcji");
+                    break;
+            } 
            
 
             
